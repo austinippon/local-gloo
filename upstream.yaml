@@ -1,0 +1,10 @@
+apiVersion: gloo.solo.io/v1
+kind: Upstream
+metadata:
+  name: mono-upstream
+  namespace: gloo-system
+spec:
+  static:
+    hosts:
+      - addr: webhook.site
+        port: 80

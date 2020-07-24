@@ -1,0 +1,10 @@
+global:
+  extensions:
+    extAuth:
+      plugins:
+        my-plugin:
+          image:
+            repository: gloo-auth-plugin
+            registry: docker.io/tilmanat
+            pullPolicy: IfNotPresent
+            tag: latest

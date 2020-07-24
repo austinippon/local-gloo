@@ -1,0 +1,13 @@
+apiVersion: enterprise.gloo.solo.io/v1
+kind: AuthConfig
+metadata:
+  name: plugin-auth
+  namespace: gloo-system
+spec:
+  configs:
+    - pluginAuth:
+        name: CustomerIOAuth
+        plugin_file_name: CustomerIOAuth.so
+        exported_symbol_name: Plugin
+        config:
+          SigningSecret: keytest
