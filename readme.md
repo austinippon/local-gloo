@@ -31,17 +31,17 @@ You can also generate these configurations using the `glooctl` cli - see https:/
  You can view upstreams and virtual services by running:
  `glooctl get upstreams` and `glooctl get virtualservices`
  
- ##Cleaning up
+ ## Cleaning up
  1) Run `minikube delete` to remove everything and shutdown the minikube environment. 
  
  _Delete specific resources using `glooctl delete ` and `kubectl delete`_
  
  _Uninstall gloo gateway: `glooctl uninstall`_
  
- ##Debugging
+ ## Debugging
  Full details see: https://docs.solo.io/gloo/latest/operations/debugging_gloo/
  
- ####Useful Commands:
+ #### Useful Commands:
  - `glooctl check` checks for problems.  I see problems with enterprise deployments locally but still seems to be OK.
  - `kubectl get all -n gloo-system` shows all resources in `gloo-system` namespace and their status
  - `glooctl debug logs` will show you gloo log output.
