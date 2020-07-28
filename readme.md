@@ -19,7 +19,7 @@ Full details can be found here: https://docs.solo.io/gloo/latest/installation/ga
         - --values flag will load startup configuration from a yaml file
 4) In a new terminal window, and run `minikube tunnel`.  Enter sudo password and leave the terminal running as it doesn't disconnect.
     - This will assign an IP to the load-balancer, and is necessary for local development (cloud env differs)
-5) `glooctly proxy url` will tell you what your gateway address is.
+5) `glooctl proxy url` will tell you what your gateway address is.
 
 ## Configure resources
 You can apply resources using kubectl.  Assuming you have a virtual service configuration named vs.yaml, and an upstream configuration named upstream.yaml in your current working directory:
